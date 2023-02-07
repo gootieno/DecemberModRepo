@@ -59,9 +59,9 @@ h1 {
     font-size: larger;
 
     /* Your code here */
-    width: fit-content;
+    /* width: fit-content; */
 
-    /* display: inline; */
+    display: inline;
     margin: 0 auto;
     margin-bottom: 40px;
     padding: 40px;
