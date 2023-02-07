@@ -1,5 +1,40 @@
 /* Your code here */
+h1#page-title {
+    font-weight: 800;
+}
 
+.pagenum {
+    position: absolute;
+    right: 1%;
+    font-size: small;
+}
+
+p {
+    text-align: justify;
+    /* 
+    margin-top: .75em;
+    margin-bottom: .75em; */
+    
+    margin: .75em 0;
+}
+
+pre {
+    margin: 100px auto;
+    width: fit-content;
+}
+
+.td2 > a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.td2 > a {
+    text-decoration: none;
+}
+
+
+pre > a {
+    color: black;
+}
 /* ===== DO NOT EDIT BELOW THIS COMMENT ===== */
 
 .noin {
