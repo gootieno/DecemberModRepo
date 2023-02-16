@@ -19,16 +19,36 @@ const getProducts = async () => {
 
   // using .then()
 
-  return await fetch("/products")
-    .then((response) => {
-      console.log("response status ", response.status);
-      console.log("response ok? ", response.ok);
-      console.log("response headers ", response.headers.get("content-type"));
-      return response.text();
-    })
-    .then((data) => {
-      console.log("response data ", data);
-    });
+  // return await fetch("/products")
+  //   .then((response) => {
+  //     console.log("response status ", response.status);
+  //     console.log("response ok? ", response.ok);
+  //     console.log("response headers ", response.headers.get("content-type"));
+  //     return response.text();
+  //   })
+  //   .then((data) => {
+  //     console.log("response data ", data);
+  //   });
+
+  //   const getProducts = async () => {
+  //     return await fetch("/products")
+  //         .then((response) => {
+  //             console.log("response status ", response.status);
+  //             console.log("response ok? ", response.ok);
+  //             console.log("response headers ", response.headers.get("content-type"));
+  //             return response.text();
+  //         })
+  //         .then((data) => {
+  //             console.log("response data ", data);
+  //         });
+  // };
+  const response = await fetch("/products");
+
+  console.log("response status ", response.status);
+  console.log("response ok? ", response.ok);
+  console.log("response headers ", response.headers.get("content-type"));
+  const data = await response.text();
+  console.log("response data ", data);
 };
 
 getProducts();

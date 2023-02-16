@@ -1,0 +1,7 @@
+#form-container {
+    display: flex;
+    border: 1px solid black;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 5px;
+}
