@@ -1,3 +1,7 @@
+import { getIndex } from "./utilities.js";
+import { mrPotatoHeadQuotes } from "./quotes/mrPotatoHead.js";
+import mrsPotatoHeadQuotes from "./quotes/mrsPotatoHead.js";
+
 class Game {
 
   start() {
@@ -38,3 +42,5 @@ class Game {
     })
   }
 }
+
+export default Game
