@@ -5,7 +5,10 @@ export default () => {
   const div = bodyChildElements[0];
 
   const divChildElements = div.children; // HTMLCollection [span]
+  // console.log(divChildElements)
   const helloWorld = div.innerText; // Hello World! Yes!    <-- NOT Hello World!
+  // console.log(helloWorld);
   const span = divChildElements[0]; // <span>Yes!</span>
+  // console.log(span);
   // debugger
 };
