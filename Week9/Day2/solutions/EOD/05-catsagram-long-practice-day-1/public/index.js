@@ -11,7 +11,6 @@ const initializePage = () => {
 
   h1.style.textAlign = "center";
   document.body.appendChild(h1);
-
   createImageContainer();
 
   // fetch
@@ -28,9 +27,25 @@ const createImageContainer = () => {
 
   div.style.margin = "0 auto";
   div.style.display = "flex";
-  div.style.justifyContent = "center";
+  div.style.flexDirection = "column";
+  div.style.alignItems = "center";
 
   img.style.width = "400px";
+
+  // dark mode example through toggling
+  const button = document.createElement("button");
+  button.style.width = "fit-content";
+  button.style.marginBottom = "30px";
+  button.innerText = "Dark Mode";
+
+  button.addEventListener("click", () => {
+    if (document.body.className.includes("darkMode")) {
+      document.body.classList.remove("darkMode");
+    } else {
+      document.body.classList.add("darkMode");
+    }
+  });
+  div.appendChild(button);
 
   div.appendChild(img);
   document.body.appendChild(div);
