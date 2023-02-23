@@ -23,6 +23,8 @@ export const createMainContent = () => {
 
 const fetchImage = async () => {
     // Fetch image from API and set img url
+
+    // check local to see if ive fetched before 
     try {
         const kittenResponse = await fetch("https://api.thecatapi.com/v1/images/search?size=small");
         // Converts to JSON
